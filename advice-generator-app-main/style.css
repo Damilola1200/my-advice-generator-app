@@ -1,0 +1,84 @@
+*, *::before, *::after  {box-sizing: border-box;}
+*{
+  font-family: 'Manrope', sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+:root{
+--Light-Cyan: hsl(193, 38%, 86%);
+--Neon-Green: hsl(150, 100%, 66%);
+--Grayish-Blue: hsl(217, 19%, 38%);
+--Dark-Grayish-Blue: hsl(217, 19%, 24%);
+--Dark-Blue: hsl(218, 23%, 16%);
+}
+body{
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  background: var(--Dark-Blue);
+}
+p{
+  color: var(--Neon-Green);
+  text-transform: uppercase;
+  letter-spacing: 0.8rem;
+  font-size: 28px;
+  font-weight:800;
+}
+h3{
+  color: var(--Light-Cyan);
+  font-size: 28px;
+}
+.ad-container{
+border-radius: 1rem;
+background-color: var(--Dark-Grayish-Blue);
+width: 500px;
+margin-top: 10rem;
+position:absolute;
+}
+.advice{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem 3rem;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 1rem;
+}
+picture{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+picture img{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+button {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  position: absolute;
+  background-color: var(--Neon-Green);
+  padding: 1rem;
+  border: none;
+  bottom: -20px;
+  left: 14rem;
+  border-radius: 50%;
+}
+button:hover{
+  filter: drop-shadow(0 0 0.75rem hsl(150,100%, 66%));
+}
+button:hover {
+  transition:  0.2s ease-out
+}
+@media(min-width:700px){
+  .advice{
+    width:500px
+  }
+}
